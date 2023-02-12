@@ -695,7 +695,7 @@ class Git(LazyMixin):
             return self
 
         def __next__(self) -> bytes:
-            return next(self)
+            return self.next()
 
         def next(self) -> bytes:
             line = self.readline()
